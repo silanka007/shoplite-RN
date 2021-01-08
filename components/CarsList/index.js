@@ -10,6 +10,7 @@ const CarsList = ({}) => {
       <FlatList
         data={cars}
         renderItem={({item}) => <CarItem {...item} />}
+        keyExtractor={(item, index) => index.toString()}
         showsVerticalScrollIndicator={false}
         snapToAlignment="start"
         decelerationRate="fast"
