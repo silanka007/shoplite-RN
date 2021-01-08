@@ -4,7 +4,9 @@ const styles = (type) => {
   return StyleSheet.create({
     container: {
       width: "100%",
-      padding: 20
+      padding: 20,
+      paddingTop: 10,
+      paddingBottom: 10
     },
     button: {
       backgroundColor: type === "primary" ? "#171a20cc" : "#ffffffa6",
